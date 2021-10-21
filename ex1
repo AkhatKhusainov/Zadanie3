@@ -24,7 +24,7 @@ int chisl(int N, int S) {
 }
 int main() {
 	int N;
-	int S=0;
+	
 	
 	cin >> N;
 	
