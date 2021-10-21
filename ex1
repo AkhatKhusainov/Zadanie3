@@ -10,6 +10,8 @@ void chisl(int N) {
 }
 int main() {
 	int N;
-     cin >> N;
-    chisl(N);
+	cin >> N;
+	if (N) chisl(N);
+	else
+		cout << 0;
 }
