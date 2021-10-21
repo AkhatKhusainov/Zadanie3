@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int size(int N) {
+	int S = 0;
+	while (N > 0) {
+		S++;
+		N = N / 10;
+	}
+	
+	return S;
+	
+}
+int chisl(int N, int S) {
+	int a;
+	if(S>0){
+		a=N / pow(10, S-1);
+		cout << "   " <<  a % 10;
+		
+		S--;
+		chisl(N,S);
+	}
+	return 0;
+
+}
+int main() {
+	int N;
+	int S=0;
+	
+	cin >> N;
+	
+	chisl(N, size(N));
+}
